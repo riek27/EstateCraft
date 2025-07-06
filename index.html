@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlocentraAI | AI-Powered Bitcoin Insurance</title>
+    <style>
+        /* Main Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        /* Header/Hero Section */
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Buttons */
+        .cta-button {
+            display: inline-block;
+            background-color: #f7931a;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #e07e0c;
+            transform: translateY(-2px);
+        }
+        
+        /* Urgency Banner */
+        .urgency-banner {
+            background-color: #f7931a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin: 30px auto;
+            border-radius: 5px;
+            max-width: 600px;
+        }
+        
+        /* Benefits Section */
+        .benefits-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 50px 0;
+        }
+        
+        .benefit-card {
+            flex-basis: 30%;
+            min-width: 280px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f7931a;
+        }
+        
+        /* How It Works */
+        .steps-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        
+        .step {
+            flex-basis: 30%;
+            min-width: 250px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: #f7931a;
+            color: white;
+            border-radius: 50%;
+            line-height: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        /* Form Styles */
+        #waitlist-form {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        button[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: #f7931a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #e07e0c;
+        }
+        
+        /* Founder's Note */
+        .founder-note {
+            background-color: #f0f2f5;
+            padding: 40px;
+            border-left: 5px solid #f7931a;
+            margin: 60px 0;
+        }
+        
+        /* FAQ Section */
+        .faq-item {
+            margin-bottom: 25px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #1a1a2e;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin: 20px 0;
+        }
+        
+        .footer-links a {
+            color: #f7931a;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .benefit-card, .step {
+                flex-basis: 100%;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header>
+        <div class="container">
+            <h1><strong>Secure Your Bitcoin with AI-Powered Protection</strong></h1>
+            <p class="hero-subtitle">Join the waitlist for BlocentraAI - the revolutionary Bitcoin insurance and risk intelligence platform</p>
+            <a href="#waitlist" class="cta-button">Join Waitlist Now →</a>
+            
+            <div class="urgency-banner">
+                <strong>Limited spots available!</strong> First 1,000 users get 50% off Year 1 premiums.
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Value Proposition -->
+        <section id="benefits">
+            <h2>Why Join BlocentraAI?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>AI-Powered Bitcoin Insurance</h3>
+                    <p>Dynamic coverage for wallets, DeFi, and institutional holdings with behavior-driven pricing.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Unlock Idle BTC Yield</h3>
+                    <p>Earn on your holdings through insured lending pools without custodial risk.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Real-Time Risk Intelligence</h3>
+                    <p>Predictive alerts and wallet scoring tailored to Bitcoin's UTXO model.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section id="social-proof">
+            <h2>Trusted by Bitcoin Innovators</h2>
+            <p><em>"BlocentraAI is solving the critical insurance gap in Bitcoin that's holding back institutional adoption."</em> - Bitcoin Security Expert</p>
+            <p><em>"Finally, a non-custodial solution that makes my Bitcoin both safe and productive."</em> - Early Beta Tester</p>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Join Waitlist</h3>
+                    <p>Secure your spot for early access</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Get Onboarded</h3>
+                    <p>Priority access when we launch</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Protect & Grow</h3>
+                    <p>Activate AI protection and yield</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Waitlist Form -->
+        <section id="waitlist">
+            <h2>Join Our Exclusive Waitlist</h2>
+            <p>Be among the first to access BlocentraAI's revolutionary Bitcoin protection platform.</p>
+            
+            <form id="waitlist-form" action="https://formspree.io/f/xgvybepe" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Bitcoin" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                
+                <input type="hidden" name="_subject" value="New BlocentraAI Waitlist Signup">
+                <input type="hidden" name="_next" value="#thank-you">
+                
+                <button type="submit">Secure My Spot →</button>
+            </form>
+        </section>
+
+        <!-- Founder's Note -->
+        <section class="founder-note">
+            <h2>A Message From Our Founder</h2>
+            <blockquote>
+                "Bitcoin deserves institutional-grade safety without compromising its decentralized nature. 
+                At BlocentraAI, we're building the essential trust layer that will enable Bitcoin to achieve 
+                mainstream adoption while staying true to its original vision. Join us in securing the future 
+                of Bitcoin."
+            </blockquote>
+            <p><strong>Riek Gatluak Geka</strong><br>Founder & CEO, BlocentraAI</p>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <p class="faq-question">When will BlocentraAI launch?</p>
+                <p>We're targeting Q4 2025 for our MVP release. Waitlist members will get priority access.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Is this service custodial?</p>
+                <p>No. BlocentraAI is fully non-custodial. You maintain control of your private keys at all times.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">How are insurance premiums calculated?</p>
+                <p>Our AI models dynamically price premiums based on wallet behavior, transaction patterns, and market conditions.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Which countries will you support?</p>
+                <p>We're launching in USA first, with rapid expansion planned to EU, Latin America, and Asia.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3>BlocentraAI: Securing the Future of Bitcoin</h3>
+            <div class="footer-links">
+                <a href="mailto:riekgatluak25@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/riek-gatluak-geka-reat-047b57304" target="_blank">LinkedIn</a>
+                <a href="https://t.me/Riekgatluak" target="_blank">Telegram</a>
+                <a href="https://wa.me/211981211736" target="_blank">WhatsApp</a>
+                <a href="https://riek27.github.io/blocentraai-legal/" target="_blank">Legal</a>
+            </div>
+            <p>© 2025 BlocentraAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Thank You Message (hidden initially) -->
+    <div id="thank-you" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; color: white; text-align: center; padding-top: 200px;">
+        <div style="background: white; color: #333; max-width: 500px; margin: 0 auto; padding: 40px; border-radius: 8px;">
+            <h2 style="color: #f7931a;">Thank You for Joining!</h2>
+            <p>We've added you to our waitlist. You'll be among the first to access BlocentraAI.</p>
+            <button onclick="document.getElementById('thank-you').style.display = 'none'" style="background: #f7931a; color: white; border: none; padding: 10px 20px; border-radius: 4px; margin-top: 20px; cursor: pointer;">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Handle form submission
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Submit form data
+            fetch(this.action, {
+                method: 'POST',
+                body: new FormData(this),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show thank you message
+                    document.getElementById('thank-you').style.display = 'block';
+                    // Reset form
+                    this.reset();
+                } else {
+                    alert('There was a problem submitting the form. Please try again.');
+                }
+            })
+            .catch(error => {
+                alert('There was a problem submitting the form. Please try again.');
+            });
+        });
+    </script>
+</body>
+</html>
