@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio | EstateCraft Luxury Home Builders</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Estate<span>Craft</span></a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="about.html">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="testimonial.html">Testimonials</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="services.html#design">Design</a></li>
+                            <li><a href="services.html#construction">Construction</a></li>
+                            <li><a href="services.html#renovation">Renovation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('https://images.unsplash.com/photo-1600585154340-1d3d9f4e5f5d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Our Portfolio</h1>
+            <p>Showcasing our exceptional luxury home projects</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1600585154340-1d3d9f4e5f5d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <p>Explore our diverse portfolio of luxury home builds and renovations</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="modern">Modern</button>
+                <button class="filter-btn" data-filter="traditional">Traditional</button>
+                <button class="filter-btn" data-filter="contemporary">Contemporary</button>
+                <button class="filter-btn" data-filter="renovation">Renovations</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="modern">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Modern Luxury Home">
+                    <div class="portfolio-overlay">
+                        <h3>Hilltop Modern Residence</h3>
+                        <p>Contemporary design with panoramic city views</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="traditional">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Traditional Luxury Home">
+                    <div class="portfolio-overlay">
+                        <h3>Classic Manor Estate</h3>
+                        <p>Timeless elegance with modern amenities</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="contemporary">
+                    <img src="https://images.unsplash.com/photo-1600585154340-1d3d9f4e5f5d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Contemporary Luxury Home">
+                    <div class="portfolio-overlay">
+                        <h3>Lakeside Contemporary</h3>
+                        <p>Open concept living with natural elements</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="modern">
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Modern Luxury Home">
+                    <div class="portfolio-overlay">
+                        <h3>Urban Oasis</h3>
+                        <p>Minimalist design with sustainable features</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="traditional">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Traditional Luxury Home">
+                    <div class="portfolio-overlay">
+                        <h3>Heritage Restoration</h3>
+                        <p>Preserving history with modern comfort</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="contemporary">
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Contemporary Luxury Home">
+                    <div class="portfolio-overlay">
+                        <h3>Mountain Retreat</h3>
+                        <p>Seamless indoor-outdoor living experience</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="renovation">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Renovation">
+                    <div class="portfolio-overlay">
+                        <h3>Beverly Hills Renovation</h3>
+                        <p>Complete transformation of a 1980s property</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="modern">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Modern Luxury Home">
+                    <div class="portfolio-overlay">
+                        <h3>Cliffside Modern</h3>
+                        <p>Dramatic architecture with ocean views</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="renovation">
+                    <img src="https://images.unsplash.com/photo-1600585154340-1d3d9f4e5f5d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Renovation">
+                    <div class="portfolio-overlay">
+                        <h3>Historical Townhouse</h3>
+                        <p>Restoration with modern luxury amenities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section class="about">
+        <div class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Project: Hilltop Modern Residence</h2>
+                <p>A closer look at one of our signature projects</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>This stunning modern residence perched on a hillside offers panoramic city views while maintaining privacy and connection to nature. The project presented unique challenges with the sloped terrain, which we transformed into an architectural advantage.</p>
+                    <p>Key features of this project include:</p>
+                    <ul style="margin: 1.5rem 0; padding-left: 1.5rem;">
+                        <li>Cantilevered design elements for dramatic effect</li>
+                        <li>Floor-to-ceiling glass walls maximizing natural light</li>
+                        <li>Sustainable features including solar panels and rainwater harvesting</li>
+                        <li>Custom-designed interior spaces with premium finishes</li>
+                        <li>Seamless indoor-outdoor living with expansive terraces</li>
+                    </ul>
+                    <p>The result is a home that not only meets the client's functional needs but also serves as a work of art that enhances its natural surroundings.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hilltop Modern Residence">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="services" style="padding: 4rem 0; text-align: center;">
+        <div class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1600585154340-1d3d9f4e5f5d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Inspired by Our Work?</h2>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2.5rem;">Let's discuss how we can bring your vision to life with the same attention to detail and craftsmanship.</p>
+            <a href="contact.html" class="btn">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>EstateCraft</h3>
+                    <p>Creating exceptional luxury homes with unparalleled craftsmanship and attention to detail for over 25 years.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#design">Custom Home Design</a></li>
+                        <li><a href="services.html#construction">Premium Construction</a></li>
+                        <li><a href="services.html#renovation">Luxury Renovation</a></li>
+                        <li><a href="services.html">Project Management</a></li>
+                        <li><a href="services.html">Interior Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Beverly Hills, CA</li>
+                        <li><i class="fas fa-phone"></i> (310) 555-1234</li>
+                        <li><i class="fas fa-envelope"></i> info@estatecraft.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EstateCraft Luxury Home Builders. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
